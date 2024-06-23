@@ -1,0 +1,307 @@
+/*for navbar and header*/
+.head{
+    margin:0px;
+    background-color:black;
+    background-image: url('https://i.postimg.cc/MG74m4tW/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    margin:0px;
+}
+/*for navbar*/
+.navbar ul{
+    list-style-type:none;
+    background-color:teal;
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+    border:25px;
+}
+.navbar li{
+    float:right;
+    display:flex;
+    align-items:center;
+    font-size:1.1em;
+    display:grid;
+    grid-gap:30px;
+    animation-name:slidedown;
+    animation-duration:1s;
+    animation-play-state:normal;
+    animation-timing-function:ease-in-out;
+    animation-direction:reverse;
+}
+
+.navbar a:hover{
+    background-color:hsl(0, 6%, 61%);
+    text-decoration-line:underline;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+    text-align: center;
+}
+/*navbar css ends here*/
+/*for header image*/
+#image{
+    height:300px;
+    width:250px;
+    border-radius:50%;
+    position:relative; 
+    right:-1000px; top:-300px;
+    /*for animating image*/
+    animation-name:slideleft;
+    animation-duration:1s;
+    animation-play-state:normal;
+    animation-timing-function:ease-in-out;
+    animation-direction:reverse;
+}
+/*for header text*/
+#mid{
+    margin-top:10.5em;
+    margin-left:12em;
+    font-size:larger;
+    line-height:1.3em;
+}
+#hello{
+    margin:2px;
+    animation-name:slidedown;
+    animation-duration:1s;
+    animation-play-state:normal;
+    animation-timing-function:ease-in-out;
+    animation-direction:reverse;
+}
+#hello1{
+    animation-name:slidedown;
+    animation-duration:1s;
+    animation-play-state:normal;
+    animation-timing-function:ease-in-out;
+    animation-direction:reverse;
+}
+/*left corner name*/
+#name{
+    animation-name:slidedown;
+    animation-duration:1s;
+    animation-play-state:normal;
+    animation-direction:reverse;
+    float:left;
+    font-size:xx-large;
+}
+#ab{
+    margin:0px;
+    padding-top:40px;
+}
+/*css for contact page*/
+#letstalk{
+    margin:100px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing:border-box;
+  border: 1px solid teal;
+  border-radius:25px;
+  font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: teal;
+    padding: 10px 20px;
+    border:1px solid teal;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    /*box-shadow:10px 10px 1.5px rgb(177, 239, 239);*/
+   /* box-shadow: 5px 5px 8px rgb(163, 239, 239), 10px 10px 8px white, 15px 15px 8px rgb(163, 239, 239);*/
+    /*animation for form*/
+    animation-name:slidedown;
+    animation-duration:1s;
+    animation-play-state:normal;
+    animation-direction:reverse;
+    float:center;
+    
+  }
+  form:hover{
+    box-shadow: 5px 5px 4px rgb(163, 239, 239), 10px 10px 4px white, 15px 15px 4px rgb(163, 239, 239);
+  }
+.form-side{
+    display:flex;
+    padding:10px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:stretch;
+    text-align:left;
+    height:auto;
+
+}
+  label {
+    display:block;
+  }
+  
+   /*linkedin profile badge*/
+   .badge-base{
+    position:relative; 
+    right:-600px; top:-500px;
+    height:50%;
+    animation-name:slidedown;
+    animation-duration:0.5s;
+    animation-play-state:normal;
+    animation-direction:reverse;
+    float:center;
+  }
+  /*css for contact page ends here*/
+ 
+/*about page*/
+#about {
+    text-align: center;
+    margin:0px;
+    padding: 20px;
+}
+
+.content-container {
+    max-width: 700px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+#about h1 {
+    font-size: 36px;
+    margin-top: 15px;
+}
+
+#about p {
+    border:20px solid teal;
+    border-radius:25px;
+    font-size: 18px;
+    line-height: 2;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+
+
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:rgb(197, 240, 240);
+    overflow: hidden;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  #hire {
+    background-color:transparent teal; /* Button background color */
+    color:black; /* Text color */
+    border:0.5px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+#hire:hover {
+    background-color:rgb(208, 247, 247); /* Darker background color on hover */
+}
+
+#hire a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+#hire a:hover {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+
+/*about section ends here*/
+  /* Styling for the horizontal rule */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 80%;
+}
+  /*animations*/
+@keyframes slidedown{
+    to{transform:translate3d(0,-40px,-40px)}
+}
+@keyframes slideleft{
+    to{transform:translate3d(0px,160px,-150px)}
+}
+@keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+  /*footer*/
+  footer{
+    z-index:999;
+    position:bottom;
+    bottom:0;
+    width: 100%;
+    background:#fff;
+    color:#7f7f7f;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 -2px 3px rgba(0,0,0,.1);
+  }
+  
